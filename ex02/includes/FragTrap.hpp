@@ -6,7 +6,7 @@
 /*   By: nicolas <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/08 11:39:35 by nicolas           #+#    #+#             */
-/*   Updated: 2023/06/08 14:47:27 by nicolas          ###   ########.fr       */
+/*   Updated: 2023/08/26 14:44:49 by nplieger         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #ifndef FRAGTRAP_HPP
@@ -20,7 +20,7 @@ class FragTrap: public ClapTrap
 		/* Attributes */
 
 		/* Constructors & Destructors */
-		
+
 		FragTrap(void);
 		FragTrap(const std::string name);
 

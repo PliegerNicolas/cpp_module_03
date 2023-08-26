@@ -6,7 +6,7 @@
 /*   By: nicolas <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/07 18:33:20 by nicolas           #+#    #+#             */
-/*   Updated: 2023/06/08 12:40:49 by nicolas          ###   ########.fr       */
+/*   Updated: 2023/08/26 14:30:53 by nplieger         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #ifndef CLAPTRAP_HPP
@@ -27,7 +27,7 @@ class	ClapTrap
 		ClapTrap(const ClapTrap &other);
 		ClapTrap &operator=(const ClapTrap &other);
 
-		~ClapTrap(void);
+		virtual ~ClapTrap(void);
 
 		/* Member functions */
 
@@ -53,7 +53,7 @@ class	ClapTrap
 		// Arithmetic operators
 		// Increment and decrement operators
 
-	private:
+	protected:
 		/* Attributes */
 		const std::string	_name;
 		unsigned int		_hit_points;

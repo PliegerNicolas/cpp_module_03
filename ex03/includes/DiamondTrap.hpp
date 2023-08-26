@@ -6,7 +6,7 @@
 /*   By: nicolas <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/09 10:02:15 by nicolas           #+#    #+#             */
-/*   Updated: 2023/06/09 13:51:43 by nicolas          ###   ########.fr       */
+/*   Updated: 2023/08/26 14:45:12 by nplieger         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #ifndef DIAMONDTRAP_HPP
@@ -28,7 +28,7 @@ class DiamondTrap: public ScavTrap, public FragTrap
 		DiamondTrap(const DiamondTrap &other);
 		DiamondTrap &operator=(const DiamondTrap &other);
 
-		~DiamondTrap(void);
+		virtual ~DiamondTrap(void);
 
 		/* Member functions */
 

@@ -6,7 +6,7 @@
 /*   By: nicolas <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/07 18:32:07 by nicolas           #+#    #+#             */
-/*   Updated: 2023/06/09 13:36:12 by nicolas          ###   ########.fr       */
+/*   Updated: 2023/08/26 14:41:44 by nplieger         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "ClapTrap.hpp"
@@ -87,7 +87,7 @@ static void	testScavTrap(void)
 	std::cout << std::endl;
 
 	std::cout << "\033[37m" << "Artificially set " << x.getName();
-	std::cout << "\'s ERG to 30." << "\033[0m" << std::endl;
+	std::cout << "\'s ERG to 1." << "\033[0m" << std::endl;
 	x.setEnergyPoints(1);
 	x.guardGate();
 	x.beRepaired(15);

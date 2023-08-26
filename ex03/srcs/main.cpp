@@ -6,7 +6,7 @@
 /*   By: nicolas <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/07 18:32:07 by nicolas           #+#    #+#             */
-/*   Updated: 2023/06/09 14:05:25 by nicolas          ###   ########.fr       */
+/*   Updated: 2023/08/26 14:47:22 by nplieger         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "ClapTrap.hpp"
@@ -89,7 +89,7 @@ static void	testScavTrap(void)
 	std::cout << std::endl;
 
 	std::cout << "\033[37m" << "Artificially set " << x.getName();
-	std::cout << "\'s ERG to 30." << "\033[0m" << std::endl;
+	std::cout << "\'s ERG to 1." << "\033[0m" << std::endl;
 	x.setEnergyPoints(1);
 	x.guardGate();
 	x.beRepaired(15);
@@ -122,7 +122,7 @@ static void	testFragTrap(void)
 	std::cout << std::endl;
 
 	std::cout << "\033[37m" << "Artificially set " << x.getName();
-	std::cout << "\'s ERG to 30." << "\033[0m" << std::endl;
+	std::cout << "\'s ERG to 1." << "\033[0m" << std::endl;
 	x.setEnergyPoints(1);
 	x.highFivesGuys();
 	x.beRepaired(15);
@@ -155,7 +155,7 @@ static void	testDiamondTrap(void)
 	std::cout << std::endl;
 
 	std::cout << "\033[37m" << "Artificially set " << x.getName();
-	std::cout << "\'s ERG to 30." << "\033[0m" << std::endl;
+	std::cout << "\'s ERG to 1." << "\033[0m" << std::endl;
 	x.setEnergyPoints(1);
 	x.highFivesGuys();
 	tsubame.whoAmI();

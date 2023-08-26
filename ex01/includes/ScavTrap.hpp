@@ -6,7 +6,7 @@
 /*   By: nicolas <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/08 11:39:35 by nicolas           #+#    #+#             */
-/*   Updated: 2023/06/08 12:46:10 by nicolas          ###   ########.fr       */
+/*   Updated: 2023/08/26 14:32:44 by nplieger         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #ifndef SCAVTRAP_HPP
@@ -20,7 +20,7 @@ class ScavTrap: public ClapTrap
 		/* Attributes */
 
 		/* Constructors & Destructors */
-		
+
 		ScavTrap(void);
 		ScavTrap(const std::string name);
 
