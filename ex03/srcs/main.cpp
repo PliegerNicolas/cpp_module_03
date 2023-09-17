@@ -6,7 +6,7 @@
 /*   By: nicolas <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/07 18:32:07 by nicolas           #+#    #+#             */
-/*   Updated: 2023/08/26 14:47:22 by nplieger         ###   ########.fr       */
+/*   Updated: 2023/09/17 21:28:00 by nicolas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "ClapTrap.hpp"
@@ -154,21 +154,21 @@ static void	testDiamondTrap(void)
 
 	std::cout << std::endl;
 
-	std::cout << "\033[37m" << "Artificially set " << x.getName();
+	std::cout << "\033[37m" << "Artificially set " << tsubame.getName();
 	std::cout << "\'s ERG to 1." << "\033[0m" << std::endl;
-	x.setEnergyPoints(1);
-	x.highFivesGuys();
+	tsubame.setEnergyPoints(1);
+	tsubame.highFivesGuys();
 	tsubame.whoAmI();
 	x.whoAmI();
-	x.beRepaired(15);
-	x.beRepaired(15);
-	x.highFivesGuys();
-	x.whoAmI();
-	tsubame.setAttackDamage(75);
-	tsubame.attack(x.getName());
-	x.takeDamage(tsubame.getAttackDamage());
-	x.highFivesGuys();
-	x.whoAmI();
+	tsubame.beRepaired(15);
+	tsubame.beRepaired(15);
+	tsubame.highFivesGuys();
+	tsubame.whoAmI();
+	x.setAttackDamage(75);
+	x.attack(x.getName());
+	tsubame.takeDamage(x.getAttackDamage());
+	tsubame.highFivesGuys();
+	tsubame.whoAmI();
 }
 
 int	main(void)

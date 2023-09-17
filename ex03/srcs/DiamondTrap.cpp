@@ -6,7 +6,7 @@
 /*   By: nicolas <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/09 10:03:47 by nicolas           #+#    #+#             */
-/*   Updated: 2023/06/09 14:04:59 by nicolas          ###   ########.fr       */
+/*   Updated: 2023/09/17 21:23:38 by nicolas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "DiamondTrap.hpp"
@@ -15,8 +15,8 @@
 
 /* Public */
 
-DiamondTrap::DiamondTrap(void): ClapTrap(), ScavTrap(), FragTrap(),
-								_name(getName() + "_clap_name")
+DiamondTrap::DiamondTrap(void): ClapTrap("default_clap_name"), ScavTrap(getName()), FragTrap(getName()),
+								_name("default")
 {
 	std::cout << "\033[37m" << "DiamondTrap : ";
 	std::cout << "Default constructor called" << "\033[0m" << std::endl;
@@ -26,9 +26,9 @@ DiamondTrap::DiamondTrap(void): ClapTrap(), ScavTrap(), FragTrap(),
 	setAttackDamage(FragTrap::getAttackDamage());
 }
 
-DiamondTrap::DiamondTrap(const std::string name): ClapTrap(name),
-												ScavTrap(name), FragTrap(name),
-												_name(getName() + "_clap_name")
+DiamondTrap::DiamondTrap(const std::string name): ClapTrap(name + "_clap_name"),
+												ScavTrap(getName()), FragTrap(getName()),
+												_name(name)
 {
 	std::cout << "\033[37m" << "DiamondTrap : ";
 	std::cout << name << "\'s Constructor with name parameter called";
